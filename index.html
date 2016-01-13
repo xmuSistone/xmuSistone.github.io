@@ -1,32 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
-<title>xmuSistone瞎抄了一坨css</title>
-<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-<link rel="stylesheet" type="text/css" href="css/demo.css" />
-<!--必要样式-->
-<link rel="stylesheet" type="text/css" href="css/component.css" />
-<!--[if IE]>
-<script src="js/html5.js"></script>
-<![endif]-->
-</head>
-<body>
-	<!-- 代码部分begin -->
-    <div class="container demo-1">
-        <div class="content">
-            <div id="large-header" class="large-header">
-                <canvas id="demo-canvas"></canvas>
-                <label class="main-title">To <span class="thin">Be <span class="thin">Continued</span></label>
-            </div>
-        </div>
-    </div>
-    <script src="js/TweenLite.min.js"></script>
-    <script src="js/EasePack.min.js"></script>
-    <script src="js/rAF.js"></script>
-    <script src="js/demo-1.js"></script>
-    <!-- 代码部分end -->
-</body>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>xmuSistone</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<!--必要样式-->
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/image_style.css" />
+
+	</head>
+
+	<body>
+
+		<!-- 代码部分begin -->
+		<div class="demo-1">
+
+			<!--背景动画-->
+
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+				</div>
+
+			</div>
+
+			<!--中间填充的文字部分-->
+
+			<div style="text-align: center; width: 60%; height: 80%; position: absolute; left: 50%; top: 50%; z-index: 1; position: fixed;">
+
+				<div class="grid" style="position: relative; left: -50%; top: -50%;">
+
+					<figure class="effect-lily">
+						<img src="img/image01.jpg" />
+						<figcaption>
+							<h2>免责 <span>声明</span></h2>
+							<p style="margin-top: 5px; margin-left: 2px;">css样式如有雷同，纯属巧合</p>
+							<p style="margin-left: 2px;">版权没有，法律不究</p>
+						</figcaption>
+					</figure>
+
+					<figure class="effect-sadie">
+						<img src="img/image02.jpg" />
+						<figcaption>
+							<h2>技术 <span>博客</span></h2>
+							<p>SOMETHING ABOUT CODING</p>
+							<a href="http://www.github.com/xmuSistone/">View more</a>
+						</figcaption>
+					</figure>
+
+					<figure class="effect-sarah">
+						<img src="img/image03.jpg" />
+						<figcaption>
+							<h2>文章 <span>转载</span></h2>
+							<p>SOMETHING&nbsp;FROM&nbsp;OTHERS</p>
+							<a href="http://www.github.com/xmuSistone/">View more</a>
+						</figcaption>
+					</figure>
+
+					<figure class="effect-layla">
+						<img src="img/image04.jpg" />
+						<figcaption>
+							<h2>个人 <span>笔记</span></h2>
+							<p>SOMETHING&nbsp;TO&nbsp;RECORD</p>
+							<a href="http://www.github.com/xmuSistone/">View more</a>
+						</figcaption>
+					</figure>
+
+					<figure class="effect-bubba">
+						<img src="img/image05.jpg" />
+						<figcaption>
+							<h2>年终 <span>总结</span></h2>
+							<p>SOMETHING&nbsp;TO&nbsp;SUMMARIZE</p>
+							<a href="http://www.github.com/xmuSistone/">View more</a>
+						</figcaption>
+					</figure>
+
+					<figure class="effect-ruby">
+						<img src="img/image06.jpg" />
+						<figcaption>
+							<h2>关于&nbsp; <span>我</span></h2>
+							<p>SOMETHING&nbsp;ABOUT&nbsp;ME</p>
+							<a href="http://www.github.com/xmuSistone/">View more</a>
+						</figcaption>
+					</figure>
+
+				</div>
+
+			</div>
+
+		</div>
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/demo-1.js"></script>
+		<!-- 代码部分end -->
+	</body>
+
 </html>
