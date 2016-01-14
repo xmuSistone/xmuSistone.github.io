@@ -164,6 +164,7 @@ figure.effect-lily p {
 figure.effect-lily h2 {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
+	padding-bottom: 10px;
 }
 
 figure.effect-lily p {
@@ -171,8 +172,10 @@ figure.effect-lily p {
 	opacity: 0;
 	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
 	transition: opacity 0.2s, transform 0.35s;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 22px;
+	margin-top: 6px;
+	font-family: arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
 }
 
 figure.effect-lily:hover img,
