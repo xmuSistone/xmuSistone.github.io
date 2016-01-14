@@ -1,2 +1,4 @@
 # xmuSistone.github.io
-write down something when i m boring
+Welcome to visit:<br>
+http://xmusistone.github.io/<br><br>
+It's empty at this moment, but i will add something interesting later.
