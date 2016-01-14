@@ -60,10 +60,10 @@ section {
 	display: inline-block;
 	overflow: hidden;
 	margin: -0.135em;
-	width: 32%;
+	width: 320px;
 	height: 300px;
 	background: #3085a3;
-	margin-left: 1%;
+	margin-left: 20px;
 	margin-top: 20px;
 	text-align: center;
 }
@@ -149,7 +149,7 @@ figure.effect-lily img {
 }
 
 figure.effect-lily figcaption {
-	top: auto;
+	top: 16.7%;
 	bottom: 0;
 	height: 50%;
 	text-align: left;
@@ -310,7 +310,7 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
-	padding-top: 30%;
+	margin-top: 69px;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0, -20px, 0);
@@ -397,7 +397,7 @@ figure.effect-layla figcaption::after {
 }
 
 figure.effect-layla h2 {
-	padding-top: 26%;
+	padding-top: 30%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
@@ -480,7 +480,7 @@ figure.effect-ruby:hover img {
 }
 
 figure.effect-ruby h2 {
-	margin-top: 20%;
+	margin-top: 30px;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0, 20px, 0);
@@ -546,6 +546,8 @@ figure.effect-sarah figcaption {
 figure.effect-sarah h2 {
 	position: relative;
 	overflow: hidden;
+	text-align: center;
+	margin-top: 75px;
 	padding: 0.5em 0;
 }
 
@@ -575,6 +577,7 @@ figure.effect-sarah p {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(100%, 0, 0);
 	transform: translate3d(100%, 0, 0);
+	text-align: center;
 }
 
 figure.effect-sarah:hover p {
