@@ -174,7 +174,7 @@ figure.effect-lily p {
 	transition: opacity 0.2s, transform 0.35s;
 	font-size: 16px;
 	line-height: 22px;
-	margin-top: 6px;
+	margin-top: 2px;
 	font-family: arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
 }
 
@@ -220,6 +220,12 @@ figure.effect-sadie figcaption::before {
 	transform: translate3d(0, 50%, 0);
 }
 
+figure.effect-sadie img {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+
 figure.effect-sadie h2 {
 	position: absolute;
 	top: 50%;
@@ -233,7 +239,8 @@ figure.effect-sadie h2 {
 }
 
 figure.effect-sadie figcaption::before,
-figure.effect-sadie p {
+figure.effect-sadie p,
+figure.effect-sadie img {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
@@ -249,18 +256,29 @@ figure.effect-sadie p {
 	transform: translate3d(0, 10px, 0);
 }
 
-figure.effect-sadie:hover h2 {
-	color: #fff;
-	-webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
-	transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+figure.effect-sadie:hover img {
+	-webkit-transform: translate3d(0, -10px, 0);
+	transform: translate3d(0, -10px, 0);
 }
 
-figure.effect-sadie:hover figcaption::before,
-figure.effect-sadie:hover p {
+figure.effect-sadie:hover h2 {
+	color: #fff;
+	-webkit-transform: translate3d(0, -50%, 0) translate3d(0, -20px, 0);
+	transform: translate3d(0, -50%, 0) translate3d(0, -20px, 0);
+}
+
+figure.effect-sadie:hover figcaption::before {
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
+
+figure.effect-sadie:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0, -90px, 0);
+	transform: translate3d(0, -90px, 0);
+}
+
 
 
 /*---------------*/
@@ -472,14 +490,15 @@ figure.effect-ruby img {
 	opacity: 0.7;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale(1.15);
-	transform: scale(1.15);
+	-webkit-transform: translate3d(-20px, -55px, 0) scale(0.90);
+	transform: translate3d(-20px, -55px, 0) scale(0.90);
+	
 }
 
 figure.effect-ruby:hover img {
 	opacity: 0.5;
-	-webkit-transform: scale(1);
-	transform: scale(1);
+	-webkit-transform: translate3d(0, 0, 0) scale(1);
+	transform: translate3d(0, 0, 0) scale(1);
 }
 
 figure.effect-ruby h2 {
