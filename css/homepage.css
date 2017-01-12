@@ -8,6 +8,10 @@ body {
 	font-family: 'Raleway', Calibri, Arial, sans-serif;
 }
 
+label, a {
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
 .home_content {
 	width: 800px;
 	margin: 0 auto;
