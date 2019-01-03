@@ -46,7 +46,7 @@
 			var hue = 217;
 			var stars = [];
 			var count = 0;
-			var maxStars = 1300;
+			var maxStars = 1800;
 
 			var canvas2 = document.createElement('canvas'),
 				ctx2 = canvas2.getContext('2d');
@@ -90,14 +90,14 @@
 			var Star = function() {
 
 				this.orbitRadius = random(maxOrbit(w, h));
-				this.radius = random(60, this.orbitRadius) / 8;
+				this.radius = random(60, this.orbitRadius) / 20;
 				//星星大小
 				this.orbitX = w / 2;
 				this.orbitY = h / 2;
 				this.timePassed = random(0, maxStars);
-				this.speed = random(this.orbitRadius) / 500000;
+				this.speed = random(this.orbitRadius) / 1800000;
 				//星星移动速度
-				this.alpha = random(2, 10) / 20;
+				this.alpha = random(2, 10) / 50;
 
 				count++;
 				stars[count] = this;
