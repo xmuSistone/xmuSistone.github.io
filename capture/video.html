@@ -18,13 +18,16 @@
 
 			function loadVideo() {
 				let videoName = getVideoNameFromUrl("content");
-				var videoElement = document.createElement("VIDEO");
-				videoElement.muted = true;
-				videoElement.setAttribute("controls", "controls");
-				videoElement.setAttribute("src", "http://pkqqjgk6u.bkt.clouddn.com/" + videoName);
-				videoElement.setAttribute("loop", "loop");
-				videoElement.setAttribute("autoplay", "autoplay");
-				document.body.appendChild(videoElement);
+				if(videoName) {
+					var videoElement = document.createElement("VIDEO");
+					videoElement.muted = true;
+					videoElement.setAttribute("controls", "controls");
+					videoElement.setAttribute("src", "http://pkqqjgk6u.bkt.clouddn.com/" + videoName);
+					videoElement.setAttribute("loop", "loop");
+					videoElement.setAttribute("autoplay", "autoplay");
+					document.body.appendChild(videoElement);
+				}
+
 			}
 
 			function getVideoNameFromUrl(name) {
@@ -90,7 +93,7 @@
 			var Star = function() {
 
 				this.orbitRadius = random(maxOrbit(w, h));
-				this.radius = random(60, this.orbitRadius) / 16;
+				this.radius = random(58, this.orbitRadius) / 22;
 				//星星大小
 				this.orbitX = w / 2;
 				this.orbitY = h / 2;
