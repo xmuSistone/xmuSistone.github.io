@@ -90,12 +90,12 @@
 			var Star = function() {
 
 				this.orbitRadius = random(maxOrbit(w, h));
-				this.radius = random(60, this.orbitRadius) / 20;
+				this.radius = random(60, this.orbitRadius) / 16;
 				//星星大小
 				this.orbitX = w / 2;
 				this.orbitY = h / 2;
 				this.timePassed = random(0, maxStars);
-				this.speed = random(this.orbitRadius) / 1800000;
+				this.speed = random(this.orbitRadius) / 2500000;
 				//星星移动速度
 				this.alpha = random(2, 10) / 50;
 
