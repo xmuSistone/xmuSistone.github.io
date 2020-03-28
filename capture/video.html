@@ -18,11 +18,17 @@
 
 			function loadVideo() {
 				let videoName = getVideoNameFromUrl("content");
+				let videoSrc = "videoFiles/alipayCapture1.mp4";
+				if (videoName == "PersistentRecyclerView") {
+					videoSrc = "https://stone225.oss-cn-hangzhou.aliyuncs.com/S00328-17223088.mp4";
+				} else if (videoName == "PersistentCoordinatorLayout") {
+					videoSrc = "https://stone225.oss-cn-hangzhou.aliyuncs.com/S00328-17223088.mp4";
+				}
 				if(videoName) {
 					var videoElement = document.createElement("VIDEO");
 					videoElement.muted = true;
 					videoElement.setAttribute("controls", "controls");
-					videoElement.setAttribute("src", "videoFiles/alipayCapture1.mp4");
+					videoElement.setAttribute("src", );
 					videoElement.setAttribute("loop", "loop");
 					videoElement.setAttribute("autoplay", "autoplay");
 					document.body.appendChild(videoElement);
