@@ -7,6 +7,7 @@
         body {
             height: 100vh;
             width: 100vw;
+            background-color: black;
         }
 
         video {
@@ -19,6 +20,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
+            opacity: 0.5;
             -webkit-filter: blur(50px);
             object-fit: cover;
         }
@@ -53,8 +55,8 @@
 
     function captureImage(videoElement) {
         let canvas = document.createElement("canvas");
-        canvas.width = videoElement.videoWidth / 2;
-        canvas.height = videoElement.videoHeight / 2;
+        canvas.width = videoElement.videoWidth / 10;
+        canvas.height = videoElement.videoHeight / 10;
         canvas.getContext('2d').drawImage(videoElement, 0, 0, canvas.width, canvas.height);
 
         let backgroundImg = document.getElementById('backBlurImg')
