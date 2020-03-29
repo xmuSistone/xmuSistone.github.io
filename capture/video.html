@@ -27,7 +27,7 @@
 
 <body>
 
-<img class="backImg" id="backBlurImg" crossorigin="*"/>
+<img class="backImg" id="backBlurImg" crossorigin="anonymous"/>
 
 <script type="text/javascript">
     let timerId = 0;
@@ -72,6 +72,7 @@
         let videoElement = document.createElement("video");
         videoElement.muted = true;
         videoElement.style.position = "absolute";
+        videoElement.setAttribute("crossorigin", "anonymous")
         videoElement.setAttribute("controls", "controls");
         videoElement.setAttribute("src", videoSrc);
         videoElement.setAttribute("loop", "loop");
