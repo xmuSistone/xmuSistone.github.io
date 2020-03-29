@@ -28,6 +28,7 @@
 <body>
 
 <img crossorigin="anonymous" class="backImg" id="backBlurImg"/>
+<video crossorigin="anonymous" id="contentVideo" />
 
 <script type="text/javascript">
     let timerId = 0;
@@ -69,7 +70,7 @@
             videoSrc = "https://stone225.oss-cn-hangzhou.aliyuncs.com/S00328-17570799.mp4";
         }
 
-        let videoElement = document.createElement("video");
+        let videoElement = document.getElementById("contentVideo");
         videoElement.muted = true;
         videoElement.style.position = "absolute";
         videoElement.setAttribute("controls", "controls");
