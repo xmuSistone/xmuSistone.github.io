@@ -30,32 +30,7 @@
 <img class="backImg" id="backBlurImg"/>
 
 <script type="text/javascript">
-    window.onload = loadVideo();
-
     let timerId = 0;
-
-    function loadVideo() {
-        let videoName = getParamsValue("content");
-        let videoSrc = "videoFiles/alipayCapture1.mp4";
-        if (videoName == "PersistentRecyclerView") {
-            videoSrc = "https://stone225.oss-cn-hangzhou.aliyuncs.com/S00328-17223088.mp4";
-        } else if (videoName == "PersistentCoordinatorLayout") {
-            videoSrc = "https://stone225.oss-cn-hangzhou.aliyuncs.com/S00328-17570799.mp4";
-        }
-
-        let videoElement = document.createElement("video");
-        videoElement.muted = true;
-        videoElement.style.position = "absolute";
-        videoElement.setAttribute("controls", "controls");
-        videoElement.setAttribute("src", videoSrc);
-        videoElement.setAttribute("loop", "loop");
-        videoElement.setAttribute("autoplay", "autoplay");
-        document.body.appendChild(videoElement);
-
-        videoElement.addEventListener('play', () => startRealtimeBlur(videoElement), false);
-        videoElement.addEventListener('pause', stopRealtimeBlur, false);
-        videoElement.addEventListener('ended', stopRealtimeBlur, false);
-    }
 
     function getParamsValue(name) {
         let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
@@ -84,6 +59,32 @@
         let backgroundImg = document.getElementById('backBlurImg')
         backgroundImg.src = canvas.toDataURL("image/png");
     };
+
+    function loadVideo() {
+        let videoName = getParamsValue("content");
+        let videoSrc = "videoFiles/alipayCapture1.mp4";
+        if (videoName == "PersistentRecyclerView") {
+            videoSrc = "https://stone225.oss-cn-hangzhou.aliyuncs.com/S00328-17223088.mp4";
+        } else if (videoName == "PersistentCoordinatorLayout") {
+            videoSrc = "https://stone225.oss-cn-hangzhou.aliyuncs.com/S00328-17570799.mp4";
+        }
+
+        let videoElement = document.createElement("video");
+        videoElement.muted = true;
+        videoElement.style.position = "absolute";
+        videoElement.setAttribute("controls", "controls");
+        videoElement.setAttribute("src", videoSrc);
+        videoElement.setAttribute("loop", "loop");
+        videoElement.setAttribute("autoplay", "autoplay");
+        document.body.appendChild(videoElement);
+
+        videoElement.addEventListener('play', () => startRealtimeBlur(videoElement), false);
+        videoElement.addEventListener('pause', stopRealtimeBlur, false);
+        videoElement.addEventListener('ended', stopRealtimeBlur, false);
+    }
+
+    window.onload = loadVideo;
+
 
 </script>
 
